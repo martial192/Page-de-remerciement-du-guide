@@ -14,8 +14,8 @@
   gtag('event', 'purchase', {
     transaction_id: 'TX-GUIDE-2025-001', // Id unique que tu peux générer dynamiquement
     affiliation: 'Site Web Guide Canada',
-    value: 4900, // Montant payé
-    currency: 'XOF',
+    value: 8,42, // Montant payé
+    currency: 'USD',
     items: [{
       item_id: 'GUIDE_CA_2025',
       item_name: 'Guide Ultime Pour Immigrer Au Canada',
@@ -999,19 +999,30 @@
             setTimeout(animateOnScroll, 300);
         });
     </script>
-    <!-- Meta Pixel Code -->
+    <style>!-- Meta Pixel Code -->
 <script>
-  fbq('track', 'Purchase', {
-    content_name: 'Guide Ultime Pour Immigrer Au Canada',
-    content_ids: ['guide_immigration_canada'],
-    content_type: 'product',
-    value: 4900,
-    currency: 'XOF'
-  });
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1400667957768581');
+fbq('track', 'PageView');
+
+// Événement d'achat (Purchase)
+fbq('track', 'Purchase', {
+  value: 8,42,
+  currency: 'USD'
+});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    </style>
 </body>
 </html>
